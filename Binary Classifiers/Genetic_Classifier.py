@@ -243,7 +243,7 @@ class Genetic_Binary_Classifier(object):
         
         #Generate first generation
         if self.best_models != None :
-            generation_par = best_models
+            generation_par = self.best_models
         elif initial_gen == None :
             for i in range(num_parents):
                 generation_par.append(self.Generate_First_Gen(X_len, func_list, func_mask))       
